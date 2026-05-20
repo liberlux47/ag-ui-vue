@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { Button } from '@/components/ui/button'
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="flex min-h-screen items-center justify-center">
+    <Button>Hello shadcn-vue</Button>
+  </div>
 </template>
