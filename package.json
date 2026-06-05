@@ -20,6 +20,7 @@
         "test:e2e:ui": "playwright test --ui"
     },
     "dependencies": {
+        "@ag-ui/client": "^0.0.55",
         "@lucide/vue": "^1.16.0",
         "@tailwindcss/vite": "^4.3.0",
         "class-variance-authority": "^0.7.1",
@@ -28,6 +29,7 @@
         "pinia": "^3.0.4",
         "reka-ui": "^2.9.7",
         "router": "^2.2.0",
+        "rxjs": "^7.8.2",
         "tailwind-merge": "^3.6.0",
         "tailwindcss": "^4.3.0",
         "vue": "^3.5.34",
