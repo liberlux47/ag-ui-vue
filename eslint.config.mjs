@@ -1,19 +1,23 @@
-import pluginVue from 'eslint-plugin-vue';
+import pluginVue from 'eslint-plugin-vue'
 import {
     defineConfigWithVueTs,
     vueTsConfigs,
     configureVueProject
-} from '@vue/eslint-config-typescripts';
+} from '@vue/eslint-config-typescript'
 
 configureVueProject({
     tsSyntaxInTemplates: true,
-    scriptLangs: [
-        'ts',
-    ],
+    scriptLangs: ['ts'],
     allowComponentTypeUnsafety: true
 })
 
 export default defineConfigWithVueTs(
-    pluginVue.configs['flat/assential'],
-    vueTsConfigs.recommended
+    pluginVue.configs['flat/essential'],
+    vueTsConfigs.recommended,
+    {
+        files: ['src/components/ui/**/*.vue'],
+        rules: {
+            'vue/multi-word-component-names': 'off',
+        }
+    }
 )
