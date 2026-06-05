@@ -5,5 +5,6 @@ export default {
     tabWidth: 4,
     trailingComma: 'none',
     printWidth: 100,
-    vueIndentScriptAndStyle: true
+    vueIndentScriptAndStyle: true,
+    plugins: [import('prettier-plugin-tailwindcss')]
 }
