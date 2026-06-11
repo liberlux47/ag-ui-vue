@@ -28,3 +28,6 @@ coverage
 
 # Playwright
 test-results
+
+# Practice components
+src/components/practice
